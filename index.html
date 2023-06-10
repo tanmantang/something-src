@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>一个网站</title>
     <style>
-      body{
-        font-size: 25px;
-        font-weight:bold; 
-        font-family:YouYuan,Micrsoft YaHei;
-      }
-      img {
-            display: block;
-            margin: auto;
-            /* cursor: zoom-in; */
-            background-color: hsl(0, 0%, 90%);
+        body {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: YouYuan, Micrsoft YaHei;
         }
-      a{
-        text-decoration:none
-      }
+
+        img {
+            height: 620px;
+        }
+
+        .content {
+            display: flex;
+            height: 650px;
+        }
+
+        a {
+            text-decoration: none
+        }
     </style>
-  </head>
-  <body>
-    <img src="https://api.vvhan.com/api/moyu">
-    <img src="https://api.vvhan.com/api/zhichang">
-    <a target="_blank" href="./水墨画.html">一个水墨画面板</a><br /><br />
-    <a target="_blank" href="./csm/index.html">吃什么❓你还在纠结中午吃什么吗👻 点它</a><br /><br />
-    <a target="_blank" href="./unlessweb/index.html">一个并没有什么用的网站</a><br /><br />
-    <a target="_blank" href="./love/index.html">520❤️试着用它去表白吧</a><br /><br />
-     
-    <p>若你也有有趣的一些网站，不妨联系我</p><br /><br />
-  </body>
+</head>
+
+<body>
+    <div class="content">
+        <div class="moyu">
+            <img src="https://api.vvhan.com/api/moyu">
+        </div>
+        <div class="zhichang">
+            <img src="https://api.vvhan.com/api/zhichang">
+        </div>
+        <div class="text">
+            <a target="_blank" href="./水墨画.html">一个水墨画面板</a><br /><br />
+            <a target="_blank" href="./csm/index.html">吃什么❓你还在纠结中午吃什么吗👻 点它</a><br /><br />
+            <a target="_blank" href="./unlessweb/index.html">一个并没有什么用的网站</a><br /><br />
+            <a target="_blank" href="./love/index.html">520❤️试着用它去表白吧</a><br /><br />
+            <p>若你也有有趣的一些网站，不妨联系我</p><br /><br />
+        </div>
+    </div>
+
+</body>
+
 </html>
