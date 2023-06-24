@@ -2,7 +2,6 @@ $(function () {
 	var run = 0,
 	heading = $("h1"),
 	timer;
-
 	$("#start").click(function () {
 		var list = $("#list").val().replace(/ +/g, " ").replace(/^ | $/g, "").split(" ");
 		if (!run) {
@@ -34,9 +33,25 @@ $(function () {
 			run = 0;
 		};
 	});
-
-	document.onkeydown = function enter(e) {
-		var e = e || event;
-		if (e.keyCode == 13) $("#start").trigger("click");
-	};
+});
+$i = 0;
+$('#start').click(function(){
+	$i++;
+	if($i >=6 ){
+		$('#start').hide();
+		$('#stop').show();
+	}
+})
+$('#stop').click(function(){
+	alert('这么作？今天别吃了！')
+	$(this).hide();
+})
+$(document).keypress(function(event){  
+	if (event.keyCode == 13) {
+		if($i >=6 ){
+			$("#stop").trigger("click");
+		}else{
+			$("#start").trigger("click");
+		}
+	}
 });
