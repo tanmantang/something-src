@@ -6,7 +6,7 @@
 
         <meta name="description" content="Fluid paint simulation">
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
         <link rel="stylesheet" href="paint.css">
     </head>
 
@@ -40,8 +40,8 @@
 
             <div id="instructions">
                 <span>点击并按住来开始</span> 绘画 <br/>
-                <span>滚动鼠标中键</span> 改变画笔大小<br/>
-                <span>空格 + 鼠标拖动</span> 来移动<br/>
+                <span>滚动鼠标滚轮</span> 改变画笔大小<br/>
+                <span>空格 + 鼠标拖动</span> 来移动画布<br/>
                 <span>拖动边缘</span> 以调整画布大小
             </div>
 
@@ -61,7 +61,7 @@
         <script src="colorpicker.js"></script>
         <script src="slider.js"></script>
         <script src="buttons.js"></script>
-        <!--<script src="brushviewer.js"></script>-->
+        <!-- <script src="brushviewer.js"></script> -->
         <script src="paint.js"></script>
 
         <script>
@@ -78,9 +78,9 @@
                 document.getElementById('placeholder').outerHTML = document.getElementById('no-support').innerHTML;
 
                 if (wgl === null) {
-                    document.getElementById('error').innerHTML = 'Unfortunately, your browser does not support WebGL.';
+                    document.getElementById('error').innerHTML = '很不幸, 你的浏览器不支持WebGL';
                 } else {
-                    document.getElementById('error').innerHTML = 'Unfortunately, your browser does not support WebGL floating point textures.';
+                    document.getElementById('error').innerHTML = '很不幸, 你的浏览器不支持WebGL浮点纹理';
                 }
             }
         </script>
