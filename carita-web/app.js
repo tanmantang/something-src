@@ -953,7 +953,7 @@
             e()
         }
         , function(e) {
-            createImageTexture(o, "pull.png", function(t) {
+            createImageTexture(o, "pull_zh.png", function(t) {
                 this.promptImage = t,
                 e()
             }
