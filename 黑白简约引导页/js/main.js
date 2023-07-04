@@ -70,9 +70,12 @@
 		dataType: "json",
 		async: false,
 		success: function(data) {
-			// $("p").append(data + "<br />");
+			$("p").append(data + "<br />");
+			if(data.from_who == null){
+				data.from_who = "佚名";
+			}
 			$('#word').text(data.hitokoto);
-			$('#author').text("�� " + data.creator);
+			$('#author').text("— " + data.from +"【"+data.from_who+"】");
 			console.log(data);
 		}
 	});
