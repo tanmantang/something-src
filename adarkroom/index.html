@@ -36,11 +36,12 @@
 		var lang = decodeURIComponent((new RegExp('[?|&]lang=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
 		// 如果没有请求语言，请尝试从本地存储读取
 		if (!lang) {
+			console.log(lang);
 			try {
 				lang = localStorage.lang;
 			} catch (e) { }
 		}
-		// 如果请求的语言不是中文，则加载所有翻译
+		// 如果请求的语言不是英文，则加载所有翻译
 		if (lang && lang != 'en') {
 			document.write('<script src="lang/' + lang + '/strings.js"><\/script>');
 			document.write('<link rel="stylesheet" type="text/css" href="lang/' + lang + '/main.css" \/>');
