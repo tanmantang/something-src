@@ -1,45 +1,159 @@
 <!DOCTYPE html>
-<html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>一个网站</title>
-    <style>
-        body {
-            font-size: 25px;
-            font-weight: bold;
-            font-family: YouYuan, Micrsoft YaHei;
-        }
+<html lang="zh-CN">
 
-        a {
-            text-decoration: none
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="keywords" content="tanmantang,运维工程师,有趣网站,小黑屋,源码,开源,前端" />
+  <meta name="description" content="一个tanmantang的导航站，用于收集存储网上有趣的，有用的一些网站或知识" />
+  <link rel="stylesheet" href="/css/main.min.css" type="text/css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Begin SEO tag -->
+  <title>tanmantang的项目导航站</title>
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="tanmantang的项目导航站" />
+  <meta property="og:url" content="https://tanmantang.com/" />
+  <meta property="og:title" content="tanmantang的项目导航站" />
+  <meta property="og:description" content="一个tanmantang的导航站，用于收集存储网上有趣的，有用的一些网站或知识" />
+  <link rel="canonical" href="https://tanmantang.com/" />
+  <!-- End SEO tag -->
+
 </head>
 
-<body>
-    <div class="content">
-        <div class="text">
-            <a target="_blank" href="./水墨画.html">一个水墨画面板</a><br />
-            <a target="_blank" href="./csm/index.html">吃什么❓你还在纠结中午吃什么吗👻 点它</a><br />
-            <a target="_blank" href="./unlessweb/index.html">一个并没有什么用的网站</a><br />
-            <a target="_blank" href="./love/index.html">520❤️试着用它去表白吧</a><br />
-            <a target="_blank" href="./adarkroom/index.html?lang=zh_cn">一个还不错的文字类小游戏-A Dark Room（小黑屋）</a><br />
-            <a target="_blank" href="./3D磁场粒子动画/index.html">3D磁场粒子动画</a><br />
-            <a target="_blank" href="./粒子线条/index.html">粒子线条</a><br />
-            <a target="_blank" href="./全屏发光会游走的粒子/index.html">全屏发光会游走的粒子</a><br />
-            <a target="_blank" href="./三角结构粒子动画/index.html">三角结构粒子动画</a><br />
-            <a target="_blank" href="./vue离子星空/index.html">vue离子星空</a><br />
-            <a target="_blank" href="./今日头条emoji.html">今日头条emoji</a><br />
-            <a target="_blank" href="./carita-web/index.html">elastic-man</a><br />
-            <a target="_blank" href="./paint/index.html">在线油漆绘画</a><br />
-            <a target="_blank" href="./黑白简约引导页/index.html">黑白简约引导页-诗无尽头 - 唯有自由才能触摸虚无的自我</a><br />
-            <a target="_blank" href="./简易API展示/index.html">一个简单的API展示页面</a><br />
-            <a target="_blank" href="./purecolors/index.html">纯色</a><br />
-            <p>若你也有有趣的一些网站，不妨<a href="//tanmantang.com">联系我</a>添加</p><br />
-        </div>
+<body data-rsssl=1>
+  <div class="header">
+    <div class="container">
+      <a class="site" href="/">一个导航</a>
+      <nav class="header-menu">
+        <ul>
+          <li class="current-menu-item"><a href="/">首页</a></li>
+          <li class=""><a href="./collect.html">本站收集</a></li>
+          <li class=""><a href="./software.html">优秀软件</a></li>
+          <li class=""><a href="./develop.html">开发相关</a></li>
+          <li class=""><a href="./tools.html">一些工具</a></li>
+          <li class=""><a href="./common.html">摸鱼瞎逛</a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
+  <!-- header -->
 
+  <div id="content-wrapper">
+    <div class="container">
+
+      <section class="sousuo">
+        <div class="search">
+          <div class="search-box">
+            <img class="search-icon" src="">
+            <input type="text" id="txt" class="search-input" placeholder="点击左侧图标可选择搜索引擎；按回车搜索">
+            <button class="search-btn" id="search-btn"><img
+                src="/images/sou0.png"></button>
+          </div>
+          <!-- 搜索引擎 -->
+          <div class="search-engine" style="display: none;">
+            <ul class="search-engine-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="nav-cell clearfix">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://www.toutiao.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAclBMVEUAAADl5eXn5+fl5eXq6uro6Ojm5ubj4+Pk5OTt7e3p6enj4+Pn5+ff39/i4uL/////Nzzr6+v/zc7/UFT/5uf/aWz/tLb/m53/goX/REj/XGD/8vP/qKr/jpH/2tr/dXn/wML/goTx8fH19fX/m57/tLW8xwRAAAAAD3RSTlMAXyCf78+/QKDv34B/EFBAdW3pAAADr0lEQVRo3u2a7XaiMBCGg59tt3Ykk5DwTdW9/1vcatARBjFVck737D7/2oPvE5JJnELFFZtovlzET/K6nEczMcR6Fe9hEvbxfM3iZ6sdTMhu3ruLaLGHaXmLrvPfdzA5u3eWH8wQUf60ho92fd8gEAu30i8Qiv3qVP87CMZuTTcQhpUQsxgCEm9EtIeA7COaoTDMxRKCshSvEJSFiCEo8dSCXCkpk6QwxtpaZ4hPCVQ/bcshgXdaeTvNX6BUJZs2TWscTPMXtGnmnJZuJ0RQWhhE7+f/gskEaKmwgggUQKJ7Tsx0/flZmgL9BenpQ3ywxu2W0pgiSaRUSsEVelzAgyybIGBMK1CPCiqZFOZTZzguMPCogK7JK4m3BAjPCIijoBgSSDjCz7CsageH/oLkMiLCQkuC3YnL2/xs+5wAKxhQaAUOhdsHBcSBLmpqFy+hRaajOznNdF2a49YZEBCoSKESXV7i89L/qEhpPd2kspvgSPzuWSTbyeJgAgwa/jMCUkjWs8ii1qNrAHlvL7u5HppAXVTg4JrGZONVRNvFlTYLL2UOo1jfMnV10rmGh1fqYQG62uDLQqjD16RntlEPCbTbTExA6bRFsDZS3RNUqiso4YgZFshDdvmqzC7LU5tG5l0B28vW7WU8H6Y1F6iibstRO1k/hQk4tzayrApLnx8UpOgpSOHWNugL1LGZSJJGVkqxNbiNZaM7VoxrTaiZYHgLUDrBOS0HSFiZ+gvSU9tkKI3znMBCl58lyCvZsD+vHhV0mwkqBIafoJOGKS/Tbwjyy9istdV5yGOkV4LsuAdyyPGGYLg7VOmNCnY7Sl3fQQNDNyPG8t1wCrc/O61FcjkPSYBtZdceAnNdbSXdTG+9ii0J6MI8vSv4DY5D54AuaOqVUyIJ2IUjgrSh/BNZv2k2dH8kuJokPSrAivK7gVW3fa94mfLZ5AJULN9NCX21tXeITMAniQsynu9SKNPSBUyA7XMZvCWw+XAXWABVo+pMQ3banAf6MhttHUtw5Nb9zOrm6/e1OziyrR9iqPxz/mlkT3keENTtMaRZlC9/08OQf0eQTipARK2PXZO59GCxeDqNOjqOr8B10Pc6On8B4v0ezF/A0n7403cuWEBQXoO/Ygn+kij8a65N2Bd1MyFWEJB54Jel8Vp8sQq3CnP3wjrYVnibiRMfoV65R6LlVxDD7pcQZAiTT0RvMC37xYfoMHuJJx3+aib6rF+m++eZ1VoMMYtelq/xkyyW82gjiD8U9zbr32NaBwAAAABJRU5ErkJggg==);">
+              </div>
+              <div class="nav-name">今日头条</div>
+              <!-- <p>一个通用信息平台，致力于连接人与信息，让优质丰富的信息得到高效精准的分发，促使信息创造价值。</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://www.weibo.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/weib.png);">
+              </div>
+              <div class="nav-name">微博</div>
+              <!-- <p>微博社交平台</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://www.douban.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/doub.png);">
+              </div>
+              <div class="nav-name">豆瓣</div>
+              <!-- <p>文艺社区，看书评、影评</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://music.163.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/m163.png);">
+              </div>
+              <div class="nav-name">网易云音乐</div>
+              <!-- <p>音乐社区，不止是播放器</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="http://www.iqiyi.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/qiyi.png);">
+              </div>
+              <div class="nav-name">爱奇艺</div>
+              <!-- <p>百度旗下视频网站</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://v.qq.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/qqtv.png);">
+              </div>
+              <div class="nav-name">腾讯视频</div>
+              <!-- <p>腾讯旗下视频网站</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://www.ixigua.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/xgtv.png);">
+              </div>
+              <div class="nav-name">西瓜视频</div>
+              <!-- <p>今日头条旗下视频网站</p> -->
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-item clearfix nav-item-h" href="https://www.bilibili.com/" target="_blank">
+              <div class="nav-img"
+                style="background-image: url(/images/bili.png);">
+              </div>
+              <div class="nav-name">哔哩哔哩</div>
+              <!-- <p>二次元社区，学习网站</p> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container clearfix">
+      <div class="copy"> © 2023 <a href="https://tanmantang.com" target="_blank">tanmantang</a></div>
+    </div>
+  </footer>
+
+  <script src="/js/main.min.js"></script>
 </body>
 
 </html>
