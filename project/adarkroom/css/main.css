@@ -7,6 +7,10 @@ body, .tooltip, select.menuBtn {
 	letter-spacing: normal;
 }
 
+div.button div.auto{
+	background: linear-gradient(to right, red, yellow);
+}
+
 html {
 	height: 100%;
 }
