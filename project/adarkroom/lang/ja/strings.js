@@ -1,6 +1,10 @@
 _.setTranslation({
 "emits a soft red glow": "柔らかな赤い輝きを放ちます",
 "stun": "気絶させる",
+"hyper.":"早める",
+"Go Hyper?":"ハイパーになりますか?",
+"turning hyper mode speeds up the game to x2 speed. do you want to do that?":"ハイパーモードを回すと、ゲーム速度が2倍になります。あなたはそれをしたいですか?",
+"classic. ":"元の速度",
 "Here is a new game. Would you like to try it?": "これが新しいゲームです。試してみませんか?",
 "It's fun. You could easily get addicted.": "楽しいです。あなたは簡単に中毒になる可能性があります",
 "a strange thrumming, pounding and crashing. and then gone.": "奇妙などきどき、ドキドキ、クラッシュ。そして消えた",

@@ -1,6 +1,10 @@
 _.setTranslation({
 "emits a soft red glow":"發出柔和的紅色光芒",
 "stun":"眩暈",
+"hyper.":"加速",
+"Go Hyper?":"要開啟加速嗎？",
+"turning hyper mode speeds up the game to x2 speed. do you want to do that?":"轉為超級模式可將遊戲速度提高到 X2 速度。你想這樣做嗎？",
+"classic. ":"原速",
 "Here is a new game. Would you like to try it?":"這是一個新遊戲。你想試試嗎？",
 "It's fun. You could easily get addicted.":"這很有趣。你很容易上癮。",
 "a strange thrumming, pounding and crashing. and then gone.":"奇怪的砰砰聲，砰砰聲和撞擊聲。 然後就走了。",
