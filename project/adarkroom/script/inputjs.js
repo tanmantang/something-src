@@ -1,4 +1,5 @@
-var baseurl = "https://oss.tanmantang.com/object/adarkroom/";
+var ossurl = "https://oss.tanmantang.com/object/adarkroom/";
+var localurl = "./";
 
 var jsA = [
     'lib/jquery.color-2.1.2.min.js',
@@ -48,36 +49,30 @@ var cssA = [
     'css/fabricator.css'
 ];
 
-
 jsA.forEach(function(value){
-	document.write("<script src="+baseurl+value+"></script>");
+	document.write("<script src="+ossurl+value+"></script>");
 })
 
 // 尝试从url读取lang参数
 var lang = decodeURIComponent((new RegExp('[?|&]lang=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
-// 如果没有请求语言，请尝试从本地存储读取
+// 如果没有请求语言，则设置默认语言为中文
 if (!lang) {
     try {
-        lang = localStorage.lang;
-    } catch (e) { }
+        lang = "zh_cn"
+    } catch (e) {  }
 }
+
 // 如果请求的语言不是英文，则加载所有翻译
 if (lang && lang != 'en') {
-    // document.write('<script src="lang/' + lang + '/strings.js"><\/script>');
-    // document.write('<link rel="stylesheet" type="text/css" href="lang/' + lang + '/main.css" \/>');
-    document.write('<script src="'+baseurl+'lang/' + lang + '/strings.js"><\/script>');
-    document.write('<link rel="stylesheet" type="text/css" href="'+baseurl+'lang/' + lang + '/main.css" \/>');
+    document.write('<script src="'+ossurl+'lang/' + lang + '/strings.js"><\/script>');
+    document.write('<link rel="stylesheet" type="text/css" href="'+ossurl+'lang/' + lang + '/main.css" \/>');
+
 }
 
 jsB.forEach(function(value){
-	document.write("<script src="+baseurl+value+"></script>");
+	document.write("<script src="+ossurl+value+"></script>");
 })
 
 cssA.forEach(function(value){
 	document.write('<link rel="stylesheet" type="text/css" href="'+value+'" />');
 })
-
-// document.write("<'script src='"+baseurl+"lib/jquery.color-2.1.2.min.js','></'script>");
-
-
-

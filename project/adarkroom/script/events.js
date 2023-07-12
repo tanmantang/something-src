@@ -83,6 +83,7 @@ var Events = {
 	startCombat: function(scene) {
 		Engine.event('game event', 'combat');
 		Events.fought = false;
+		Events.won = false;
 		var desc = $('#description', Events.eventPanel());
 
 		$('<div>').text(scene.notification).appendTo(desc);
@@ -567,6 +568,7 @@ var Events = {
 
 				if(enemyHp <= 0 && !Events.won) {
 					// Success!
+					Events.won = true;
 					if (explosion) {
 						Events.explode(enemy, $('#wanderer'), explosion);
 					}
@@ -601,6 +603,7 @@ var Events = {
 			Events.checkPlayerDeath();
 		}
 		else if(hp <= 0 && !Events.won) {
+			Events.won = true;
 			Events.winFight();
 		}
 		Events.updateFighterDiv(target);
@@ -639,6 +642,7 @@ var Events = {
 				}
 
 				if (venomous && !shielded) {
+					clearInterval(Events._dotTimer);
 					Events._dotTimer = setInterval(() => {
 						Events.dotDamage(enemy, Math.floor(dmg / 2));
 					}, Events.DOT_TICK);
@@ -763,9 +767,9 @@ var Events = {
 	},
 
 	clearTimeouts: () => {
-		clearTimeout(Events._enemyAttackTimer);
-		Events._specialTimers.forEach(clearTimeout);
-		clearTimeout(Events._dotTimer);
+		clearInterval(Events._enemyAttackTimer);
+		Events._specialTimers.forEach(clearInterval);
+		clearInterval(Events._dotTimer);
 	},
 
 	endFight: function() {
@@ -1325,7 +1329,6 @@ var Events = {
 			} else {
 				var r = Math.floor(Math.random()*(possibleEvents.length));
 				Events.startEvent(possibleEvents[r]);
-				AudioEngine.playEventMusic(possibleEvents[r].audio);
 			}
 		}
 
@@ -1374,6 +1377,7 @@ var Events = {
 		if (!event) {
 			return;
 		}
+		AudioEngine.stopEventMusic();
 		Events.eventPanel().remove();
 		Events.activeEvent().eventPanel = null;
 		Events.eventStack.shift();

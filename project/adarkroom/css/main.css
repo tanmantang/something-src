@@ -1,3 +1,10 @@
+/* 添加自定义样式 */
+
+/* 添加双击颜色 */
+div.button div.auto{
+	background: linear-gradient(to right, red, yellow);
+}
+
 /* Fonts */
 body, .tooltip, select.menuBtn {
 	font-family: "Times New Roman", Times, serif;
@@ -5,10 +12,6 @@ body, .tooltip, select.menuBtn {
 	font-weight: normal;
 	line-height: normal;
 	letter-spacing: normal;
-}
-
-div.button div.auto{
-	background: linear-gradient(to right, red, yellow);
 }
 
 html {

@@ -6,13 +6,13 @@
 
 Events.Marketing = [{
   /* Play Penrose! */
-  title: _('Penrose'),
+  title: _('from game author'),
   isAvailable: () => !$SM.get('marketing.penrose'),
   scenes: {
     'start': {
       text: [
-        _('a strange thrumming, pounding and crashing. visions of people and places, of a huge machine and twisting curves.'),
-        _('inviting. it would be so easy to give in, completely.')
+        _('Here\'s a new game. Would you like to try it?'),
+        _('It\'s fun. You could easily get addicted.')
       ],
       notification: _('a strange thrumming, pounding and crashing. and then gone.'),
       blink: true,

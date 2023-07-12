@@ -30,7 +30,7 @@ var World = {
   MOVES_PER_FOOD: 2,
   MOVES_PER_WATER: 1,
   DEATH_COOLDOWN: 120,
-  FIGHT_CHANCE: 0, //0.20, TODO UNCOMMENT THIS
+  FIGHT_CHANCE: 0.20,
   BASE_HEALTH: 10,
   BASE_HIT_CHANCE: 0.8,
   MEAT_HEAL: 8,
@@ -97,7 +97,7 @@ var World = {
     'bolas': {
       verb: _('tangle'),
       type: 'ranged',
-      damage: 'stun',
+      damage: _('stun'),
       cooldown: 15,
       cost: { 'bolas': 1 }
     },
@@ -117,7 +117,7 @@ var World = {
     'disruptor': {
       verb: _('stun'),
       type: 'ranged',
-      damage: 'stun',
+      damage: _('stun'),
       cooldown: 15
     }
   },

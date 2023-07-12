@@ -130,7 +130,7 @@
         var optionsList = $('<ul>')
           .appendTo(selectOptions);
         $('<li>')
-          .text(_('select language'))
+          .text(_('language.'))
           .appendTo(optionsList);
 
         $.each(langs, function(name,display){
@@ -144,7 +144,7 @@
 
       $('<span>')
         .addClass('volume menuBtn')
-        .text(_('sound on'))
+        .text(_('sound on.'))
         .click(() => Engine.toggleVolume())
         .appendTo(menu);
 
@@ -180,7 +180,7 @@
 
       $('<span>')
         .addClass('menuBtn')
-        .text(_('save.'))
+        .text(_('import')+"/"+_('export'))
         .click(Engine.exportImport)
         .appendTo(menu);
 
@@ -299,7 +299,7 @@
 
     exportImport: function() {
       Events.startEvent({
-        title: _('Export / Import'),
+        title: _('import')+_('export'),
         scenes: {
           start: {
             text: [
@@ -821,11 +821,11 @@
         enabled = !$SM.get('config.soundOn');
       }
       if (!enabled) {
-        $('.volume').text(_('sound on'));
+        $('.volume').text(_('sound on.'));
         $SM.set('config.soundOn', false);
         AudioEngine.setMasterVolume(0.0);
       } else {
-        $('.volume').text(_('sound off'));
+        $('.volume').text(_('sound off.'));
         $SM.set('config.soundOn', true);
         AudioEngine.setMasterVolume(1.0);
       }
@@ -887,6 +887,27 @@
               nextScene: 'end',
               onChoose: () => Engine.toggleVolume(false)
             }
+          }
+        }
+      }
+    });
+    setTimeout(notifyDoubleClick, 3000);
+  }
+
+  function notifyDoubleClick() {
+    Events.startEvent({
+      title: _('tips'),
+      scenes: {
+        start: {
+          text: [
+            _('you can double click the mouse to automatically keep certain functions completed.'),
+            _('such as stoke fire and gather wood or other')
+          ],
+          buttons: {
+            'yes': {
+              text: _('ok'),
+              nextScene: 'end',
+            },
           }
         }
       }

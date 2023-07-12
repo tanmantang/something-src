@@ -1255,7 +1255,7 @@ Events.Executioner = {
           'continue': {
             text: _('continue'),
             cooldown: Events._LEAVE_COOLDOWN,
-            nextScene: { 1: '4' }
+            nextScene: { 1: '4-3' }
           },
           'leave': {
             text: _('leave'),
@@ -1745,7 +1745,7 @@ Events.Executioner = {
         buttons: {
           'continue': {
             text: _('continue'),
-            nextScene: { 1: '7-1' }
+            nextScene: { 1: '8' }
           },
           'leave': {
             text: _('leave'),
