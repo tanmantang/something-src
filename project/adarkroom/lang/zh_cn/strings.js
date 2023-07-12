@@ -202,6 +202,7 @@ _.setTranslation({
     "embark": "出发",
     "the compass points ": "罗盘指向:",
     "perks:": "能力:",
+    "perks": "能力",
     "none": "空",
     "armour": "护甲",
     "water": "水",
