@@ -2,6 +2,7 @@ _.setTranslation({
     "Dropbox connection": "dropbox连接",
     "connect game to dropbox local storage": "连接到dropbox云存储",
     "connect": "连接",
+    "emits a soft red glow":"发出一种柔和的红光",
     "a strange thrumming, pounding and crashing. visions of people and places, of a huge machine and twisting curves.":"奇怪的砰砰声，砰砰声和撞击声。人们和地方的幻象，巨大的机器和扭曲的曲线",
     "cancel": "取消",
     "Penrose":"彭罗斯",
