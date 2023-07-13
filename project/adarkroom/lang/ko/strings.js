@@ -1,11 +1,11 @@
 _.setTranslation({
 "emits a soft red glow":"부드러운 붉은 빛을 발산합니다",
 "stun":"전기",
-"Here is a new game. Would you like to try it?":"여기 새로운 게임이 있습니다. 당신은 그것을 시도해보고 싶은가요?",
+"Here's a new game. Would you like to try it?":"여기 새로운 게임이 있습니다. 당신은 그것을 시도해보고 싶은가요?",
 "It's fun. You could easily get addicted.":"재밌어요. 쉽게 중독 될 수 있습니다.",
 "a strange thrumming, pounding and crashing. and then gone.":"이상한 쿵쾅 거리는 소리, 두근 거리는 소리, 부딪히는 소리. 그리고 사라졌습니다.",
 "from game author":"게임 작가의 말",
-"gave in":"굴복",
+"view":"좀 보고 싶습니다",
 "Sound Available!": "사운드 사용 가능!",
 "enable audio": "오디오 사용",
 "disable audio": "오디오 비활성화",

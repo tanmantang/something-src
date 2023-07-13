@@ -1,5 +1,5 @@
-var ossurl = "https://oss.tanmantang.com/object/adarkroom/";
-var localurl = "./";
+// var ossurl = "https://oss.tanmantang.com/object/adarkroom/";
+var ossurl = "./";
 
 var jsA = [
     'lib/jquery.color-2.1.2.min.js',

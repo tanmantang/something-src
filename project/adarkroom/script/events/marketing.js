@@ -17,8 +17,8 @@ Events.Marketing = [{
       notification: _('a strange thrumming, pounding and crashing. and then gone.'),
       blink: true,
       buttons: {
-        'give in': {
-          text: _('give in'),
+        'view': {
+          text: _('view'),
           onClick: () => {
             $SM.set('marketing.penrose', true);
           },

@@ -203,6 +203,7 @@ var AudioEngine = {
             });
     },
     loadAudioFile: function (src) {
+        src = ossurl+src;
         // if (src.indexOf('http') === -1) {
         //     src = window.location + src;
         // }
