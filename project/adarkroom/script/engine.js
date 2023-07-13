@@ -891,7 +891,7 @@
         }
       }
     });
-    setTimeout(notifyDoubleClick, 3000);
+    setTimeout(notifyDoubleClick, 15000);
   }
 
   function notifyDoubleClick() {

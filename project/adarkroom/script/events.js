@@ -32,7 +32,7 @@ var Events = {
 			Events.Global,
 			Events.Room,
 			Events.Outside,
-      Events.Marketing
+      		// Events.Marketing
 		);
 
 		Events.eventStack = [];
@@ -1454,6 +1454,7 @@ var Events = {
 				Events.recallDelay(stateName +'["'+ i +'"]', target[i]);
 			} else {
 				if(typeof target[i] == 'function'){
+					console.log(target[i]);
 					target[i]();
 				} else {
 					$SM.remove(stateName);

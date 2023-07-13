@@ -1,5 +1,5 @@
-// var ossurl = "https://oss.tanmantang.com/object/adarkroom/";
-var ossurl = "./";
+var ossurl = "https://oss.tanmantang.com/object/adarkroom/";
+// var ossurl = "./";
 
 var jsA = [
     'lib/jquery.color-2.1.2.min.js',
@@ -33,7 +33,7 @@ var jsB = [
     'script/events/outside.js',
     'script/events/encounters.js',
     'script/events/setpieces.js',
-    'script/events/marketing.js',
+    // 'script/events/marketing.js',
     'script/events/executioner.js',
     'script/localization.js'
 ];
