@@ -1,0 +1,1615 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	index
+------------------------------------------------------------*/
+.skitter {
+	max-width: inherit;
+	border-radius: 22px;
+	background: none;
+}
+.skitter .container_skitter {
+	margin-left: -5px;
+	border-radius: 32px;
+	border: 5px solid #E60011;
+	box-sizing: border-box;
+}
+.skitter .image a {
+	pointer-events: none;
+}
+.skitter .info_slide_dots {
+	left: auto !important;
+	transform: none !important;
+	right: 30px;
+	bottom: 17px;
+}
+.skitter .info_slide_dots .image_number {
+	margin-right: 8px;
+	display: block;
+	height: 35px;
+	width: 35px;
+	color: #f57e85;
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	background: rgba(255,255,255,0.8);
+	border-radius: 4px;
+	line-height: 35px;
+	text-indent: inherit;
+}
+.skitter .info_slide_dots .image_number.image_number_select,
+.skitter .info_slide_dots .image_number:hover {
+	color: #fff;
+	background: #ff8790;
+}
+.mainVisual {
+	position: relative;
+	padding: 27px 31px 169px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/bg01.png") no-repeat left top,url("https://oss.tanmantang.com/object/xxb/img/index/bg02.png") no-repeat right bottom;
+	background-size: 1051px auto,897px auto;
+}
+.mainVisual .title {
+	position: absolute;
+	right: 23.8%;
+	bottom: 143px;
+	z-index: 60;
+	height: 42%;
+	overflow: hidden;
+}
+.mainVisual .title .txtImg {
+	float: left;
+}
+.mainVisual .title .txtImg01 {
+	margin: -27px -24px 0 0;
+	transform: translateY(350%);
+}
+.mainVisual .title.on .txtImg01 {
+	animation: poyon 1s linear 1 forwards;
+}
+.mainVisual .title .txtImg02 {
+	padding: 110px 0 0 0;
+	transform: translateY(350%);
+}
+.mainVisual .title.on .txtImg02 {
+	animation: poyon2 1s linear 0.5s 1 forwards;
+}
+@keyframes poyon {
+	0%   { transform: scale(0.8, 1.4) translate(0%, 350%); }
+	10%  { transform: scale(0.8, 1.4) translate(0%, 45%); }
+	20%  { transform: scale(1.4, 0.6) translate(0%, 0%); }
+	30%  { transform: scale(0.9, 1.1) translate(0%, 40%); }
+	40%  { transform: scale(0.95, 1.2) translate(0%, 70%); }
+	50%  { transform: scale(0.95, 1.2) translate(0%, 20%); }
+	60%  { transform: scale(1.1, 0.9) translate(0%, 25%); }
+	70%  { transform: scale(1.0, 1.0) translate(0%, 30%); }
+	100% { transform: scale(1.0, 1.0) translate(0%, 30%); }
+}  
+
+@keyframes poyon2 {
+	0%   { transform: scale(0.8, 1.4) translate(0%, 350%); }
+	10%  { transform: scale(0.8, 1.4) translate(0%, 35%); }
+	20%  { transform: scale(1.4, 0.6) translate(0%, 0%); }
+	30%  { transform: scale(0.9, 1.1) translate(0%, 30%); }
+	40%  { transform: scale(0.95, 1.2) translate(0%, 60%); }
+	50%  { transform: scale(0.95, 1.2) translate(0%, 10%); }
+	60%  { transform: scale(1.1, 0.9) translate(0%, 15%); }
+	70%  { transform: scale(1.0, 1.0) translate(0%, 20%); }
+	100% { transform: scale(1.0, 1.0) translate(0%, 20%); }
+} 
+.mainVisual .txtBox {
+	position: absolute;
+	left: 84px;
+	bottom: 116px;
+	width: 35%;
+	z-index: 60;
+	max-width: 505px;
+	background: #fff;
+}
+.mainVisual .txtBox a {
+	padding: 16px 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #ff7581;
+	box-sizing: border-box;
+}
+.mainVisual .txtBox a:hover {
+	opacity: 0.7;
+}
+.mainVisual .txtBox .imgSpan {
+	padding: 10px 43px 10px 0;
+	width: 46px;
+	border-right: 1px solid #fff;
+}
+.mainVisual .txtBox .txtSpan {
+	width: calc(100% - 122px);
+	color: #fff;
+	font-family: 'Noto Serif JP', serif;
+	font-size: 1.3rem;
+	letter-spacing: 0.1em;
+	line-height: 1.9;
+}
+.mainVisual .dotList {
+	position: absolute;
+	right: 67px;
+	bottom: 177px;
+	z-index: 60;
+}
+.mainVisual .dotList li {
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+.mainVisual .dotList li a {
+	display: block;
+	height: 35px;
+	width: 35px;
+	color: #f57e85;
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	background: rgba(255,255,255,0.8);
+	border-radius: 4px;
+	line-height: 35px;
+}
+.mainVisual .dotList .on a,
+.mainVisual .dotList li a:hover {
+	color: #fff;
+	background: #ff8790;
+}
+.mainVisual .rBox {
+	position: absolute;
+	right: 35px;
+	top: 18%;
+	z-index: 60;
+}
+.mainVisual .rBox .top {
+	margin-bottom: 18px;
+	color: #fff;
+	height: 300px;
+	font-size: 0.9rem;
+	-webkit-writing-mode : tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	direction: ltr; 
+}
+.mainVisual .rBox .snsList {
+	width: 19px;
+	float: right;
+}
+.mainVisual .rBox .snsList li {
+	margin-bottom: 10px;
+}
+
+.scroll {
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	bottom: 21.7%;
+	width: 32px;
+	height: 54px;
+	z-index: 60;
+}
+.scroll a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+.scroll a .scroll-line {
+	display: inline-block;
+	margin-left: -1px;
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	top: 25px;
+	height: 40px;
+	background-color: #fff;
+}
+.scroll a .scroll-line::before {
+	position: absolute;
+	bottom: 0;
+	left: -3px;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(-135deg);
+	content: '';
+}
+.scroll a .scroll-circle {
+	position: absolute;
+	left: -4px;
+	top: -16px;
+	width: 6px;
+	height: 6px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	animation: scroll 2s cubic-bezier(0.76, 0, 0.24, 1) forwards infinite;
+}
+@keyframes scroll {
+	0% {
+		opacity: 0;
+		top: -16px;
+	}
+	10% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+		top: 30px;
+	}
+	100% {
+		opacity: 0;
+		top: 30px;
+	}
+}
+
+.headline--jump .char {
+	display: inline-block;
+	animation: jump 2s cubic-bezier(0.165, 0.44, 0.64, 1) forwards infinite;
+	/* animation-delay: calc(var(--char-index) * 0.075s);
+	-webkit-animation: calc(var(--char-index) * 0.075s); */
+}
+
+@keyframes jump {
+	20% {
+		transform: translateY(2%) scaleY(0.9);
+	}
+	40% {
+		transform: translateY(-100%) scaleY(1.2);
+	}
+	50% {
+		transform: translateY(10%) scaleY(0.8);
+	}
+	70% {
+		transform: translateY(-5%) scaleY(1);
+	}
+	80%, 100% {
+		transform: translateY(0) scaleY(1);
+	}
+}
+
+#main .sec01 {
+	margin: -3px 0 112px;
+	position: relative;
+}
+#main .sec01:before {
+	position: absolute;
+	left: 0;
+	top: -179px;
+	width: 360px;
+	height: 252px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/img01.png") no-repeat left top;
+	background-size: 360px auto; 
+	content: "";
+	z-index: -1;
+}
+#main .sec01 .content {
+	position: relative;
+}
+#main .sec01 .content h2 {
+	position: absolute;
+	left: 40px;
+	top: -25px;
+}
+#main .sec01 .title {
+	margin: 0 0 95px;
+	color: #f57e85;
+	font-size: 3.5rem;
+	font-weight: bold;
+	font-family: "游ゴシック", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
+	text-align: center;
+}
+#main .sec01 .newsBox {
+	padding: 10px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec01_bg01.png") repeat left top;
+	background-size: 3px auto;
+	border-radius: 30px;
+}
+#main .sec01 .newsBox .info {
+	padding: 33px 33px 27px;
+	border-radius: 20px;
+	background: #ffcc30 url("https://oss.tanmantang.com/object/xxb/img/index/sec01_bg02.png") no-repeat center top;
+	background-size: 676px auto;
+}
+#main .sec01 .newsBox .listDl {
+	color: #d32c25;
+	border-top: 1px solid #E9E6E0;
+}
+#main .sec01 .newsBox .listDl dt {
+	padding: 25px 0 0 10px;
+	font-size: 1.85rem;
+	font-weight: 400;
+    font-family: 'Noto Serif JP', serif;
+	float: left;
+}
+#main .sec01 .newsBox .listDl dd {
+	padding: 27px 0 21px 11.6em;
+	font-size: 1.6rem;
+	border-bottom: 1px solid #E9E6E0;
+}
+#main .sec01 .newsBox .listDl dd a {
+	color: #d32c25;
+}
+#main .sec01 .newsBox .listDl dd a:hover {
+	opacity: 0.7;
+}
+#main .sec02 {
+	padding: 12px 0 0;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec02_bg.jpg") no-repeat center top;
+	background-size: cover;
+}
+#main .sec02 h2 {
+	margin: 0 0 -18px 38px;
+}
+#main .sec02 .infoBox {
+	margin: 0 0 0 24px;
+}
+#main .sec02 .infoBox .txtBox {
+	width: 49.5%;
+}
+#main .sec02 .infoBox .title {
+	margin-bottom: 11px;
+}
+#main .sec02 .infoBox .txtBox01 {
+	padding: 26.3% 0 0;
+	width: 56%;
+	margin-right: -11.6%;
+}
+#main .sec02 .infoBox .txtBox01 .txt {
+	color: #f57e85;
+	font-size: 1.4rem;
+	line-height: 2;
+	font-weight: bold;
+	margin: 0 0 53px 8px;
+}
+#main .sec02 .infoBox .txtBox01 .pho {
+	margin-bottom: 32px;
+}
+#main .sec02 .infoBox .txtBox01 .txtP {
+	margin-bottom: -70px;
+	font-size: 11rem;
+	color: #f57e85;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	z-index: 100;
+	text-align: center;
+	letter-spacing: 0.2em;
+}
+#main .sec02 .infoBox .txtBox01 .txtP .txtSpan {
+	margin-bottom: -15px;
+	display: block;
+}
+#main .sec02 .phoImg {
+	padding-bottom: 52.153%;
+	position: relative;
+	overflow: hidden;
+}
+#main .sec02 .parallax {
+	position: absolute;
+	top: -41%;
+	left: 0;
+	width: 100%;
+	height: 142%;
+	background: url(https://oss.tanmantang.com/object/xxb/img/index/sec02_photo03.jpg) no-repeat top center;
+	background-size: cover;
+}
+#main .sec03 {
+	padding: 72px 0 53px;
+	background: #f8f4ea;
+}
+#main .sec03 .txtBox {
+	margin-bottom: 38px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_imgtext02.png") no-repeat center top 6px;
+	background-size: 623px auto; 
+}
+#main .sec03 .txtBox p {
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 2.2;
+	letter-spacing: 0.2em;
+}
+#main .sec03 .txtImg {
+	margin-bottom: 170px;
+	text-align: center;
+}
+#main .sec03 .infoSec {
+	padding: 0 15px;
+}
+#main .sec03 .detailBox {
+	position: relative;
+	height: 1600px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#main .sec03 .detailBox .txtImg {
+	position: absolute;
+	left: 38%;
+	top: -3.5%;
+	width: 28.4%;
+}
+#main .sec03 .detailBox .infoBox {
+	position: absolute;
+	left: 4.6%;
+	top: 0;
+	width: 36%;
+}
+#main .sec03 .detailBox .infoBox02 {
+	left: auto;
+	right: -30px;
+	top: -67px;
+}
+#main .sec03 .detailBox .infoBox .pho {
+	max-width: 72%;
+	display: block;
+	margin: 0;
+}
+#main .sec03 .detailBox .infoBox .ttl {
+	clear: both;
+	margin-bottom: -2px;
+	padding: 10px 0 0;
+	color: #f57e85;
+	font-size: 2.7rem;
+	font-weight: bold;
+	letter-spacing: 0.18em;
+	text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 3px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;
+}
+#main .sec03 .detailBox .infoBox02 .pho {
+	float: right;
+	max-width: 75%;
+}
+#main .sec03 .detailBox .infoBox02 .ttl {
+	margin-right: 15px;
+	padding-top: 3px;
+	text-align: right;
+}
+#main .sec03 .detailBox .infoBox .txtInner {
+	margin-left: -23px;
+	color: #f57e85;
+	padding: 15px 10px 22px 20px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_bg01.png") no-repeat left top;
+	background-size: 100% 100%; 
+}
+#main .sec03 .detailBox .infoBox02 .txtInner {
+	padding: 30px 2px 30px 0;
+	margin: 0 -11px 0 14px;
+	text-align: right;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_bg02.png") no-repeat left top;
+	background-size: 100% 100%; 
+}
+#main .sec03 .detailBox .infoBox03 {
+	left: 42%;
+	top: 21.2%;
+}
+#main .sec03 .detailBox .infoBox03 .pho {
+	max-width: 68%;
+}
+#main .sec03 .detailBox .infoBox03 .ttl {
+	margin: 0 0 0 47px;
+}
+#main .sec03 .detailBox .infoBox03 .txtInner {
+	padding: 20px 10px 22px;
+	margin: 0 20px 0 -12px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_bg03.png") no-repeat left top;
+	background-size: 100% 100%; 	
+}
+#main .sec03 .detailBox .infoBox04 {
+	left: -38px;
+	top: 41.5%;
+}
+#main .sec03 .detailBox .infoBox04 .pho {
+	max-width: inherit;
+	margin-right: -8.6%;
+}
+#main .sec03 .detailBox .infoBox04 .ttl {
+	margin: 0 0 -6px 50px;
+}
+#main .sec03 .detailBox .infoBox04 .txtInner {
+	padding: 25px 20px 22px;
+	margin: 0 0 0 -10px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_bg04.png") no-repeat left top;
+	background-size: 100% 100%; 	
+}
+#main .sec03 .detailBox .infoBox05 {
+	left: 34.5%;
+	top: 66%;
+}
+#main .sec03 .detailBox .infoBox05 .pho {
+	max-width: 89%;
+}
+#main .sec03 .detailBox .infoBox05 .ttl {
+	padding: 0 0 0 22px;
+}
+#main .sec03 .detailBox .infoBox05 .txtInner {
+	margin: 0 -37px 0 -16px;
+	padding: 23px 3px 22px 20px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_bg05.png") no-repeat left top;
+	background-size: 100% 100%; 	
+}
+#main .sec03 .detailBox .infoBox06 {
+	left: auto;
+	right: -4.5%;
+	top: 47.3%;
+}
+#main .sec03 .detailBox .infoBox06 .pho {
+	max-width: 94.5%;
+	margin-bottom: 0;
+}
+#main .sec03 .detailBox .infoBox06 .ttl {
+	padding: 0;
+	margin: -6px 0 0 68px;
+}
+#main .sec03 .detailBox .infoBox06 .txtInner {
+	margin: 0 -56px 0 5px;
+	padding: 23px 3px 22px 20px;
+}
+#main .sec03 .dlBox {
+	margin: 0 -7px 0 26px;
+	background: #fff;
+	padding: 25px 25px 32px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+#main .sec03 .dlBox .txtDl {
+	width: 50%;
+	line-height: 2.2;
+}
+#main .sec03 .dlBox .txtDl01 {
+	width: 46.5%;
+}
+#main .sec03 .dlBox .txtDl dt {
+	float: left;
+	color: #ef8989;
+}
+#main .sec03 .dlBox .txtDl dd {
+	color: #9acfe2;
+	padding: 0 0 1px 7em;
+}
+#main .sec03 .dlBox .txtDl dd a {
+	color: #9acfe2;
+}
+#main .sec03 .dlBox .txtDl dd a:hover {
+	text-decoration: underline;
+}
+#main .sec03 .dlBox .txtDl01 dt {
+	color: #d6be88;
+}
+#main .sec03 .dlBox .txtDl01 dd {
+	padding-left: 8.3em;
+}
+#main .sec03 .subBox {
+	padding: 20px 96px 0 0;
+	float: right;
+	width: 610px;
+}
+#main .sec03 .subBox .pho {
+	float: right;
+}
+#main .sec03 .subBox .btn {
+	padding-top: 81px;
+	width: 304px;
+	position: relative;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+#main .sec03 .subBox .btn:before {
+	position: absolute;
+	right: -66px;
+	top: 13px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/common/icon02.png") no-repeat left top;
+	background-size: 70px auto;
+	width: 70px;
+	height: 60px;
+	content: "";
+}
+#main .sec03 .subBox .btn a {
+	display: block;
+	color: #fff;
+	padding: 12px;
+	font-size: 2.5rem;
+	background: #87d0e6;
+	border-radius: 4px;
+}
+#main .sec03 .subBox .btn a:hover {
+	opacity: 0.7;
+}
+#main .sec03 .subBox .btn .small {
+	display: block;
+	font-size: 1.3rem;
+}
+#main .sec04 {
+	padding: 260px 0 200px;
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+}
+#main .sec04 h2 {
+	position: absolute;
+	left: 46px;
+	top: 96px;
+}
+#main .sec04 .movie {
+	margin: 0 40px;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+}
+#main .sec04 .movie a {
+	display: block;
+}
+#main .sec04 .movie img {
+	width: 100%;
+	transition: transform ease 0.3s;
+	-webkit-transition: transform ease 0.3s;
+}
+#main .sec04 .movie a:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#main .sec04 .movie .btn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+#main .sec05 {
+	padding: 47px 0 69px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/sec05_bg.jpg") no-repeat center center;
+	background-size: cover;
+}
+#main .sec05 h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+#main .sec05 .content {
+	max-width: 1204px;
+}
+#main .sec05 .infoBox {
+	margin-bottom: 116px;
+}
+#main .sec05 .infoBox .lBox {
+	width: 46.5%;
+	float: left;
+}
+#main .sec05 .infoBox .lBox .title {
+	margin-bottom: 10px;
+}
+#main .sec05 .infoBox .lBox .txtList {
+	margin: 0 -20px 17px 16px;
+}
+#main .sec05 .infoBox .lBox .txtList li {
+	color: #ffba00;
+	font-size: 1.44rem;
+	font-weight: bold;
+	line-height: 1.4;
+	letter-spacing: 0.1em;
+}
+#main .sec05 .infoBox .lBox .ttl {
+	width: 218px;
+	margin: 0 auto 20px;
+	color: #fff;
+	padding: 3px 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	background: #b29963;
+	border-radius: 3px;
+}
+#main .sec05 .infoBox .lBox .txt {
+	color: #292c33;
+	margin: 0 0 0 24px;
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+#main .sec05 .infoBox .rBox {
+	margin: 59px 24px 0 0;
+	padding: 0 50px 7px;
+	float: right;
+	width: 45%;
+	box-sizing: border-box;
+	background: #fff;
+	border: 3px solid #f197ba;
+	border-radius: 4px;
+}
+#main .sec05 .infoBox .rBox .title {
+	position: relative;
+	top: -26px;
+	width: 200px;
+	color: #fff;
+	padding: 8px;
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin: 0 auto;
+	border-radius: 4px;
+	text-align: center;
+	box-sizing: border-box;
+	background: #e95b97;
+	letter-spacing: 0.1em;
+}
+#main .sec05 .infoBox .rBox .listUl {
+	padding-top: 5px;
+}
+#main .sec05 .infoBox .rBox .listUl li {
+	position: relative;
+	padding-bottom: 26px;
+}
+#main .sec05 .infoBox .rBox .listUl li:before {
+	position: absolute;
+	left: 15px;
+	bottom: 3px;
+	background: url("https://oss.tanmantang.com/object/xxb/img/index/line.png") no-repeat left bottom;
+	background-size: 9.5px auto; 
+	width: 9.5px;
+	top: 33px;
+	content: "";
+}
+#main .sec05 .infoBox .rBox .listUl li:last-child:before {
+	display: none;
+}
+#main .sec05 .infoBox .rBox .listUl li .top {
+	padding: 2px 0 5px 43px;
+	color: #d96597;
+	position: relative;
+	font-size: 1.92rem;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+#main .sec05 .infoBox .rBox .listUl li .top01 {
+	color: #4494da;
+}
+#main .sec05 .infoBox .rBox .listUl li .top .num {
+	position: absolute;
+	left: 3px;
+	top: -1px;
+	width: 34px;
+	height: 34px;
+	color: #907842;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 1.55rem;
+	line-height: 34px;
+	text-align: center;
+	border: 2px solid #907842;
+	border-radius: 50%;
+	background: #fff;
+	box-sizing: border-box;
+}
+#main .sec05 .infoBox .rBox .listUl li .txt {
+	margin: 0 -10px 0 53px;
+	font-size: 1.3rem;
+	color: #9c9994;
+	font-weight: bold;
+	line-height: 1.4;
+}
+#main .sec05 .borderBox {
+	max-width: 864px;
+	padding: 19px 50px 12px 60px;
+	margin: 0 auto;
+	border: 3px dotted #8acde4;
+	background: #fff;
+	box-sizing: border-box;
+}
+#main .sec05 .borderBox .txtList {
+	margin-bottom: 6px;
+}
+#main .sec05 .borderBox .txtList li {
+	padding-left: 1em;
+	color: #6b6b6b;
+	line-height: 2.3;
+	text-indent: -1em;
+}
+#main .sec05 .borderBox .txtList li a {
+	color: #6b6b6b;
+}
+#main .sec05 .borderBox .txtUl {
+	margin-left: -5px;
+}
+#main .sec05 .borderBox .txtUl li {
+	padding: 0 0 12px 33px;
+	color: #f57e85;
+	background: url("https://oss.tanmantang.com/object/xxb/img/common/icon03.png") no-repeat left top;
+	background-size: 21px auto; 
+	letter-spacing: 0.1em;
+}
+#main .sec05 .borderBox .txtUl li a {
+	color: #f57e85;
+}
+#main .sec05 .borderBox .linkSpan {
+	display: inline-block;
+	margin-left: 66px;
+}
+#main .sec05 .borderBox .linkSpan a:hover {
+	text-decoration: underline;
+}
+#main .sec05 .borderBox .txtUl li .linkSpan {
+	margin-left: 46px;
+}
+#main .sec06 {
+	background: #f7f5f6;
+}
+#main .sec06 .imgBox img {
+	margin-top: -43px;
+}
+@media all and (min-width: 897px) and (max-width: 1400px) {
+    .mainVisual {
+        padding-bottom: 96px;
+        background-size: 600px auto,500px auto;
+    }
+    .scroll {
+		bottom: 20%;
+	}
+    .mainVisual .txtBox a {
+        padding: 13px 20px;
+    }
+    .mainVisual .title img {
+        width: 250px;
+    }
+    .mainVisual .title img {
+        width: 200px;
+    }
+    .mainVisual .title .txtImg02 {
+        padding-top: 60px;
+    }
+    .mainVisual .rBox {
+        top: 14%;
+    }
+    .mainVisual .rBox .top {
+        margin-bottom: 0px;
+    }
+	#main .sec02 .infoBox .txtBox01 {
+		margin-right: 0;
+	}
+	#main .sec02 .infoBox {
+		margin-left: 0;
+	}
+	#main .sec02 .infoBox .txtBox01 {
+		width: 48%;
+	}
+	#main .sec02 .infoBox .txtBox01 .txtP {
+		font-size: 9rem;
+	}
+	#main .sec03 .detailBox .infoBox02 {
+		right: 0;
+	}
+	#main .sec03 .detailBox .infoBox .txtInner {
+		font-size: 1.2rem;
+	}
+	#main .sec03 .detailBox .infoBox04 {
+		left: 0;
+	}
+	#main .sec03 .detailBox .infoBox06 .txtInner {
+		margin-right: 16px;
+	}
+}
+@keyframes scrollSp {
+	0% {
+		opacity: 0;
+		top: -13px;
+	}
+	10% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+		top: 21px;
+	}
+	100% {
+		opacity: 0;
+		top: 21px;
+	}
+}
+
+@media all and (max-width: 896px) {
+	.scroll {
+		margin-left: -14px;
+		width: 24px;
+		height: 40px;
+		bottom: 17.7%;
+	}
+	.scroll a .scroll-line {
+		top: 18px;
+		height: 28px;
+	}
+	.scroll a .scroll-line::before {
+		width: 4px;
+		height: 4px;
+		left: -2px;
+	}
+	.scroll a .scroll-circle {
+		left: -3px;
+		width: 4px;
+		height: 4px;
+		top: -13px;
+		animation: scrollSp 2s cubic-bezier(0.76, 0, 0.24, 1) forwards infinite;
+	}
+
+	.skitter .container_skitter {
+		margin-left: -3px;
+		border-width: 4px;
+		border-radius: 20px;
+	}
+	.skitter .box_clone img {
+		max-width: calc(100vw - 14px);
+	}
+	.mainVisual {
+		position: relative;
+		padding: 9px 10px 78px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_bg01.jpg") no-repeat left top,url("https://oss.tanmantang.com/object/xxb/img/index/sp_bg02.jpg") no-repeat right bottom;
+		background-size: 375px auto,375px auto; 
+	}
+	.mainVisual .title {
+		position: absolute;
+		right: auto;
+		bottom: -21.5%;
+		padding: 0 12px 0 7px;
+	}
+	.mainVisual .title .txtImg {
+		float: left;
+	}
+	.mainVisual .title .txtImg01 {
+		margin: 0 -10% 0 0;
+		width: 60%;
+	}
+	.mainVisual .title .txtImg02 {
+		padding: 24% 0 0;
+		width: 45%;
+		float: right;
+	}
+    .mainVisual .imgList li img {
+        width: 100%;
+    }
+	.mainVisual .txtBox {
+		display: none;
+	}
+	.mainVisual .dotList {
+		position: absolute;
+		right: 2px;
+		bottom: 7px;
+	}
+	.mainVisual .dotList li {
+		margin-left: 5px;
+	}
+	.mainVisual .dotList li a {
+		height: 25px;
+		width: 25px;
+		font-size: 1.5rem;
+		line-height: 22px;
+	}
+	.mainVisual .dotList .on a,
+	.mainVisual .dotList li a:hover {
+		color: #fff;
+		background: #ff8790;
+	}
+	.skitter .info_slide_dots {
+		position: absolute;
+		right: 8px;
+		bottom: 7px;
+	}
+	.skitter .info_slide_dots .image_number {
+		margin-left: 2px;
+		height: 25px;
+		width: 25px;
+		font-size: 1.5rem;
+		line-height: 22px;
+	}	
+	.skitter .info_slide_dots .image_number:hover {
+		color: #ff8790;
+		background: rgba(255,255,255,0.8);
+	}
+	.skitter .info_slide_dots .image_number.image_number_select,
+	.skitter .info_slide_dots .image_number.image_number_select:hover {
+		color: #fff;
+		background: #ff8790;
+	}
+	.mainVisual .rBox {
+		display: none;
+	}
+	#main .sec01 {
+		margin: 224px 0 55px;
+		position: relative;
+	}
+	#main .sec01:before {
+		position: absolute;
+		left: 0;
+		top: -178px;
+		width: 173px;
+		height: 165px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_img01.png") no-repeat left top;
+		background-size: 173px auto; 
+		content: "";
+	}
+	#main .sec01 .content h2 {
+		top: -70px;
+		left: 20px;
+	}
+	#main .sec01 .title {
+		padding-top: 15px;
+		margin: 0 0 36px;
+		font-size: 2.3rem;
+	}
+	#main .sec01 .newsBox {
+		padding: 5px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sec01_bg01.png") repeat left top;
+		background-size: 3px auto;
+		border-radius: 25px;
+	}
+	#main .sec01 .newsBox .info {
+		padding: 22px 10px 30px;
+		border-radius: 23px;
+		background: #ffcc30 url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec01_bg02.png") no-repeat center top;
+		background-size: 100% auto;
+	}
+	#main .sec01 .newsBox .listDl dt {
+		padding: 1px 0 0 7px;
+		font-size: 1.5rem;
+		float: none;
+	}
+	#main .sec01 .newsBox .listDl dd {
+		padding: 10px 0 4px 4px;
+		font-size: 1.25rem;
+		line-height: 1.4;
+	}
+	#main .sec01 .newsBox .listDl dd a {
+		color: #d32c25;
+	}
+	#main .sec01 .newsBox .listDl dd a:hover {
+		opacity: 0.7;
+	}
+	#main .sec02 {
+		padding: 0 10px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec02_bg.jpg") no-repeat center top;
+		background-size: 100% auto;
+	}
+	#main .sec02 h2 {
+		margin: 0;
+	}
+	#main .sec02 .infoBox {
+		margin: 0;
+		display: block;
+	}
+	#main .sec02 .infoBox .txtBox {
+		width: 100%;
+	}
+	#main .sec02 .infoBox .title {
+		margin: 0 20px 98px 0;
+	}
+    #main .sec02 .infoBox .title img {
+        width: 100%;
+    }
+	#main .sec02 .infoBox .txtBox .pho {
+		margin: 0 7px;
+	}
+	#main .sec02 .infoBox .txtBox01 {
+		padding: 25px 0 0;
+		width: 100%;
+	}
+	#main .sec02 .infoBox .txtBox01 .txt {
+		font-size: 1.2rem;
+		line-height: 2;
+		margin: 0 -2px 25px;
+	}
+	#main .sec02 .infoBox .txtBox01 .pho {
+		margin: 0 -6px -30px;
+	}
+	#main .sec02 .infoBox .txtBox01 .txtP {
+		padding-right: 0;
+		margin: -20px -20px -23px 0;
+		font-size: 6.6rem;
+		float: right;
+		position: relative;
+		width: 100%;
+		z-index: 100;
+	}
+	#main .sec02 .infoBox .txtBox01 .txtP .txtSpan {
+		margin-bottom: -10px;
+	}
+	#main .sec02 .phoImg {
+		height: 282px;
+		padding-bottom: 0;
+		left: -10px;
+		width: calc(100% + 20px);
+	}
+	#main .sec02 .parallax {
+		background-image: url(https://oss.tanmantang.com/object/xxb/img/index/sp_sec02_photo03.jpg);
+		height: 122%;
+		top: -21%;
+	}
+    #main .sec02 .phoImg img {
+        width: 100%;
+    }
+	#main .sec03 {
+		padding: 25px 0 51px;
+	}
+	#main .sec03 .txtBox {
+		margin: 0 -10px 76px;
+		padding: 48px 10px 0;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec03_imgtext02.png") no-repeat center top 6px;
+		background-size: 375px auto; 
+	}
+	#main .sec03 .txtBox p {
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 2.5;
+		letter-spacing: 0.07em;
+	}
+	#main .sec03 .txtImg {
+		margin: 0 8px 49%;
+		text-align: center;
+	}
+    #main .sec03 .infoSec {
+        padding: 0;
+    }
+	#main .sec03 .detailBox {
+		height: auto;
+		max-width: inherit;
+	}
+	#main .sec03 .detailBox .txtImg {
+		position: absolute;
+		width: 49.2%;
+        top: -6.4%;
+        left: auto;
+        right: 0;
+        z-index: 1;
+	}
+	#main .sec03 .detailBox .infoBox {
+		position: relative;
+		left: auto;
+		width: 76%;
+		margin: 0 0 0 30px;
+        z-index: 2;
+	}
+	#main .sec03 .detailBox .infoBox02 {
+		left: auto;
+		right: -30px;
+		top: -67px;
+	}
+	#main .sec03 .detailBox .infoBox .pho {
+		max-width: 76%;
+		display: block;
+		margin: 0;
+	}
+	#main .sec03 .detailBox .infoBox .ttl {
+		margin-bottom: -2px;
+		padding: 10px 0 0;
+		font-size: 5.8vw;
+	}
+	#main .sec03 .detailBox .infoBox02 .pho {
+		float: right;
+		max-width: 272px;
+	}
+	#main .sec03 .detailBox .infoBox02 .ttl {
+		margin-right: 15px;
+		padding-top: 3px;
+		text-align: right;
+	}
+	#main .sec03 .detailBox .infoBox .txtInner {
+		margin-left: -16px;
+		padding: 4.7% 5%;
+		font-size: 3.0vw;
+		line-height: 1.45;
+		letter-spacing: 0.16em;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec03_bg01.png") no-repeat left top;
+		background-size: 100% 100%; 
+	}
+	#main .sec03 .detailBox .infoBox02 .txtInner {
+		padding: 30px 2px 30px 0;
+		margin: 0 -11px 0 14px;
+		text-align: right;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sec03_bg02.png") no-repeat left top;
+		background-size: 100% 100%; 
+	}
+	#main .sec03 .detailBox .infoBox03 {
+		left: auto;
+		right: auto;
+		float: right;
+		width: 73%;
+		margin: 30px 0 30px 0;
+	}
+	#main .sec03 .detailBox .infoBox03 .pho {
+		max-width: 72%;
+	}
+	#main .sec03 .detailBox .infoBox03 .ttl {
+		margin: 0 0 -4px 47px;
+	}
+	#main .sec03 .detailBox .infoBox03 .txtInner {
+		padding: 4.7% 5% 6%;
+		margin: 0 0 0 -12px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec03_bg03.png") no-repeat left top;
+		background-size: 100% 100%; 	
+	}
+	#main .sec03 .detailBox .infoBox04 {
+		margin: 0 0 43px 6px;
+	}
+	#main .sec03 .detailBox .infoBox04 .pho {
+		max-width: inherit;
+		margin-right: -13%;
+	}
+	#main .sec03 .detailBox .infoBox04 .pho img {
+		width: 100%;
+	}
+	#main .sec03 .detailBox .infoBox04 .ttl {
+		margin: -4px 0 -6px 40px;
+	}
+	#main .sec03 .detailBox .infoBox04 .txtInner {
+		padding: 6% 7% 6.3%;
+		margin: 0 -13px 0 -7px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec03_bg04.png") no-repeat left top;
+		background-size: 100% 100%; 	
+	}
+	#main .sec03 .detailBox .infoBox05 {
+		margin: 0 0 50px 39px;
+	}
+	#main .sec03 .detailBox .infoBox05 .pho {
+		max-width: 91%;
+	}
+	#main .sec03 .detailBox .infoBox05 .ttl {
+		padding: 0 0 0 22px;
+	}
+	#main .sec03 .detailBox .infoBox05 .txtInner {
+		margin: 0 -37px 0 -16px;
+		padding: 6% 2% 6.3% 7%;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec03_bg05.png") no-repeat left top;
+		background-size: 100% 100%; 	
+	}
+	#main .sec03 .detailBox .infoBox06 {
+		left: auto;
+        margin-left: 15px;
+		margin-bottom: 50px;
+	}
+	#main .sec03 .detailBox .infoBox06 .pho {
+		max-width: 97%;
+		margin-bottom: 0;
+	}
+	#main .sec03 .detailBox .infoBox06 .ttl {
+		padding: 0;
+		margin: -5px 0 -4px 50px;
+	}
+	#main .sec03 .detailBox .infoBox06 .txtInner {
+		margin: 0 -50px 0 5px;
+		padding: 6% 7% 6.3%;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_sec03_bg06.png") no-repeat left top;
+		background-size: 100% 100%; 	
+	}
+	#main .sec03 .dlBox {
+		margin: 0 -3px;
+		display: block;
+		padding: 17px 10px;
+		border-radius: 16px;
+		box-sizing: border-box;
+	}
+	#main .sec03 .dlBox .txtDl {
+		width: 100%;
+		font-size: 1rem;
+		line-height: 2.3;
+	}
+	#main .sec03 .dlBox .txtDl01 {
+		width: 100%;
+		margin-top: 22px;
+	}
+	#main .sec03 .dlBox .txtDl dd {
+		padding: 0 0 1px 7.2em;
+	}
+	#main .sec03 .dlBox .txtDl dd a:hover {
+		text-decoration: none;
+	}
+	#main .sec03 .dlBox .txtDl01 dd {
+		padding-left: 7.2em;
+	}
+	#main .sec03 .subBox {
+		padding: 40px 0 0 0;
+		float: none;
+        max-width: 450px;
+        margin: 0 auto;
+		width: auto;
+	}
+	#main .sec03 .subBox .pho {
+		float: right;
+		padding-right: 23px;
+		width: 43%;
+	}
+	#main .sec03 .subBox .btn {
+		clear: both;
+		padding-top: 21px;
+		width: 85%;
+		margin: 0 auto;
+		position: relative;
+		letter-spacing: 0.1em;
+		text-align: center;
+	}
+	#main .sec03 .subBox .btn:before {
+		position: absolute;
+		right: auto;
+		left: 35px;
+		top: -63px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/common/icon02.png") no-repeat left top;
+		background-size: 70px auto;
+		width: 70px;
+		height: 60px;
+		content: "";
+	}
+	#main .sec04 {
+		padding: 109px 0 74px;
+		max-width: inherit;
+	}
+	#main .sec04 h2 {
+		position: absolute;
+		left: 0;
+		top: 54px;
+		width: 260px;
+	}
+	#main .sec04 .movie {
+		margin: 0 4px;
+	}
+	#main .sec04 .movie a:hover img {
+		-webkit-transform: none;
+		transform: none;
+	}
+	#main .sec05 {
+		padding: 22px 0 89px;
+		background: #E7E7E9 url("https://oss.tanmantang.com/object/xxb/img/index/sp_sp_sec05_bg.jpg") no-repeat center top;
+		background-size: 100% auto;
+	}
+	#main .sec05 h2 {
+		margin-bottom: 36px;
+	}
+	#main .sec05 .content {
+		max-width: inherit;
+	}
+	#main .sec05 .infoBox {
+		margin-bottom: 40px;
+	}
+	#main .sec05 .infoBox .lBox {
+		width: 100%;
+		float: none;
+	}
+	#main .sec05 .infoBox .lBox .title {
+		margin-bottom: 7px;
+	}
+    #main .sec05 .infoBox .lBox .comDate {
+        font-size: 1.5rem;
+        margin: 0 0 5px;
+    }
+    #main .sec05 .infoBox .lBox .comDate .font01 {
+        font-size: 1.9rem;
+    }
+    #main .sec05 .infoBox .lBox .comDate .font02 {
+        font-size: 1rem;
+    }
+    #main .sec05 .infoBox .lBox .comDate .font03 {
+        font-size: 2.15rem;
+    }
+	#main .sec05 .infoBox .lBox .txtList {
+		margin: 0 -20px 22px 13px;
+	}
+	#main .sec05 .infoBox .lBox .txtList li {
+		font-size: 0.9rem;
+	}
+	#main .sec05 .infoBox .lBox .ttl {
+		width: 174px;
+		margin: 0 auto 12px;
+		padding: 2px 0;
+		font-size: 1rem;
+	}
+	#main .sec05 .infoBox .lBox .txt {
+		color: #292c33;
+		margin: 0 0 0 17px;
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+	#main .sec05 .infoBox .rBox {
+		margin: 82px 6px 0;
+		padding: 0 30px 7px;
+		float: none;
+		width: auto;
+		box-sizing: border-box;
+		background: #fff;
+		border: 3px solid #f197ba;
+		border-radius: 4px;
+	}
+	#main .sec05 .infoBox .rBox .title {
+		position: relative;
+		top: -20px;
+		width: 126px;
+		padding: 4px 4px 5px;
+		font-size: 1.6rem;
+	}
+	#main .sec05 .infoBox .rBox .listUl {
+		padding-top: 5px;
+	}
+	#main .sec05 .infoBox .rBox .listUl li {
+		position: relative;
+		padding-bottom: 16px;
+	}
+	#main .sec05 .infoBox .rBox .listUl li:before {
+		position: absolute;
+		left: 10px;
+		bottom: 2px;
+		background: url("https://oss.tanmantang.com/object/xxb/img/index/sp_line.png") no-repeat left bottom;
+		background-size: 6.5px auto; 
+		width: 9.5px;
+		top: 21px;
+		content: "";
+	}
+	#main .sec05 .infoBox .rBox .listUl li:last-child:before {
+		display: none;
+	}
+	#main .sec05 .infoBox .rBox .listUl li .top {
+		padding: 0 0 3px 30px;
+		font-size: 1.2rem;
+	}
+	#main .sec05 .infoBox .rBox .listUl li .top .num {
+		position: absolute;
+		left: 3px;
+		top: -1px;
+		width: 22px;
+		height: 22px;
+		font-size: 1rem;
+		line-height: 20px;
+		text-align: center;
+		border: 2px solid #907842;
+		border-radius: 50%;
+		box-sizing: border-box;
+	}
+	#main .sec05 .infoBox .rBox .listUl li .txt {
+		margin: 0 -28px 0 33px;
+		font-size: 0.9rem;
+		line-height: 1.3;
+	}
+	#main .sec05 .borderBox {
+		max-width: auto;
+		padding: 18px 10px 53px;
+		margin: 0 3px;
+		border: 3px dotted #8acde4;
+		background: #fff;
+		box-sizing: border-box;
+	}
+	#main .sec05 .borderBox .txtList {
+		margin-bottom: 22px;
+	}
+	#main .sec05 .borderBox .txtList li {
+		font-size: 0.9rem;
+		line-height: 2.05;
+	}
+	#main .sec05 .borderBox .txtList li a {
+		color: #6b6b6b;
+	}
+	#main .sec05 .borderBox .txtUl {
+		margin-left: 0;
+	}
+	#main .sec05 .borderBox .txtUl li {
+		padding: 0 0 0 20px;
+		font-size: 0.9rem;
+		line-height: 2.05;
+		background: url("https://oss.tanmantang.com/object/xxb/img/common/icon03.png") no-repeat left top 3px;
+		background-size: 12px auto; 
+	}
+	#main .sec05 .borderBox .linkSpan {
+		margin-left: 47px;
+	}
+	#main .sec05 .borderBox .linkSpan a:hover {
+		text-decoration: none;
+	}
+	#main .sec05 .borderBox .txtUl li .linkSpan {
+		display: block;
+		margin: 2px 0 0 6px;
+	}
+	#main .sec06 .imgBox img {
+		margin-top: -44px;
+        width: 100%;
+	}
+}
+@media all and (max-width: 670px) and (min-width: 500px) {
+	#main .sec02 .parallax {
+		top: -49%;
+		height: 150%;
+	}
+}
+@media all and (max-width: 896px) and (min-width: 671px) {
+	#main .sec02 .parallax {
+		top: -69%;
+		height: 170%;
+	}
+}
+@media all and (max-width: 374px) {
+	#main .sec01 .title {
+		font-size: 2.2rem;
+	}
+	#main .sec02 .infoBox .txtBox01 .txtP {
+		margin-right: -10px;
+		font-size: 6rem;
+	}
+    #main .sec03 .txtBox {
+        background-size: 100% auto;
+    }
+    #main .sec03 .detailBox .infoBox .txtInner {
+        font-size: 2.9vw;
+    }
+    #main .sec03 .subBox .btn a {
+        font-size: 2.2rem;
+    }
+    #main .sec05 .infoBox .rBox .listUl li .txt {
+        margin-right: -10px;
+    }
+	#main .sec03 .txtBox p {
+		letter-spacing: 0.05em;
+	}
+}
+.fancybox-is-open .fancybox-bg {
+	opacity: 0.8;
+    background-color: #E5E5E5 !important;
+}
+.fancybox-content {
+    background-color: #E5E5E5 !important;
+}
+.fancybox-toolbar {
+	padding: 30px  !important;
+	box-sizing: border-box;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+.fancybox-toolbar .fancybox-button--zoom,
+.fancybox-toolbar .fancybox-button--play,
+.fancybox-toolbar .fancybox-button--thumbs{
+	display: none !important;
+	opacity: 0 !important;
+}
+.fancybox-button--close {
+	display: block !important;
+	opacity: 1 !important;
+	background: url("https://oss.tanmantang.com/object/xxb/img/common/pop_close_black.png") no-repeat center center / 55px 55px;
+	visibility: visible !important;
+}
+.fancybox-button--close svg {
+	opacity: 0 !important;
+}
+.fancybox-infobar {
+	display: none !important;
+	opacity: 0 !important;
+}
+.popup .inner {
+	max-width: 515px;
+}
+.popup .inner .movie {
+	margin-bottom: 10px;
+}
+.popup .inner p {
+	color: #f57e85;
+    margin-top: 5px;
+    font-size: 1.7rem;
+	font-weight: bold;
+}
+.popup {
+	padding: 24px;
+	display: none;
+}
+@media all and (max-width: 896px) {
+	.popup .inner p {
+		font-size: 1.3rem;
+	}
+}
+@media all and (-ms-high-contrast:none){
+	#main .sec03 .subBox .btn a {
+		padding: 15px 12px 10px;
+	}
+	#main .sec05 .infoBox .rBox .title {
+		padding: 12px 8px 6px;
+	}
+	#main .sec05 .infoBox .lBox .ttl {
+		padding: 5px 0 3px;
+	}
+	#main .sec05 .borderBox .txtUl li {
+		padding-top: 3px;
+	}
+}
