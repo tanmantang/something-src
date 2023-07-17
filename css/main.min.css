@@ -11,7 +11,10 @@ body {
     line-height: 1.6;
     word-spacing: 0;
     letter-spacing: 0;
-    background-image: url("https://oss.tanmantang.com/public/bg.jpg");
+    background:
+      radial-gradient(circle at 50% 0,rgba(255,0,0,.5),rgba(255,0,0,0) 70.71%),
+      radial-gradient(circle at 6.7% 75%,rgba(0,0,255,.5),rgba(0,0,255,0) 70.71%),
+      radial-gradient(circle at 93.3% 75%,rgba(0,255,0,.5),rgba(0,255,0,0) 70.71%) beige;
 }
 
 p {
@@ -198,7 +201,7 @@ header {
     padding-top: 40px;
     padding-bottom: 40px;
     /* background: #2e7bcf url(https://blz.nosdn.127.net/sre/images/header-bg.jpg) 0 0 repeat-x; */
-    background: #2e7bcf;
+    /* background: #2e7bcf; */
     border-bottom: solid 1px #275da1
 }
 
@@ -231,9 +234,9 @@ header .header-mobile {
 }
 
 .header {
-    /* background: #2e7bcf url(https://blz.nosdn.127.net/sre/images/header-bg.jpg) 0 0 repeat-x; */
-    background: #2e7bcf;
-    border-bottom: solid 1px #275da1;
+    /* background: url(../bg-nav.png); */
+    /* background: #2e7bcf; */
+    /* border-bottom: solid 1px #275da1; */
     position: fixed;
     top: 0;
     left: 0;
