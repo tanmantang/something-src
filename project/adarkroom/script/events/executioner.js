@@ -2152,7 +2152,7 @@ Events.Executioner = {
   },
 
   "executioner-command": { /* Command deck */
-    title: _('Command Deck'),
+    title: _('command deck'),
     audio: AudioLibrary.LANDMARK_CRASHED_SHIP,
     scenes: {
       'start': {
