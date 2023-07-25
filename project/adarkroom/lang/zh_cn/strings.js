@@ -27,7 +27,7 @@ _.setTranslation({
 "broken medic":"损坏的医疗无人机",
 "one of the defence turrets still works.":"其中一个防御塔还能用。",
 "defence turret":"防御炮塔",
-"A Ravaged battleship":"一艘遭受严重破坏的的战舰",
+"A Ravaged Battleship":"一艘遭受严重破坏的的战舰",
 "the remains of a huge ship are embedded in the earth.":"一艘巨轮的残骸埋在地下。",
 "the remains of a massive battleship lie here, like a silent sealed city.":"一艘巨大战舰的残骸躺在这里，就像一座寂静的封闭城市。",
 "it lists to the side in a deep crevasse, cut when it fell from the sky.":"它在一个深深的裂缝中倾斜着，这是它从天上掉下来时留下的痕迹。",
