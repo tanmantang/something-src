@@ -53,6 +53,7 @@ const Fabricator = {
     'hypo': {
       name: _('hypo'),
       type: 'tool',
+      desc: _('restores') + ' ' + World.HYPO_HEAL + ' ' + _('hp'),
       blueprintRequired: true,
       buildMsg: _('a handful of hypos. life in a vial.'),
       cost: () => ({
@@ -81,8 +82,9 @@ const Fabricator = {
     'glowstone': {
       name: _('glow stone'),
       type: 'tool',
+      desc: _('the light never goes out'),
       blueprintRequired: true,
-      buildMsg: _('a smooth, perfect sphere. its light is inextinguishable.'),
+      buildMsg: _('a smooth, perfect sphere.')+_('the light never goes out'),
       cost: () => ({
         'alien alloy': 1
       })

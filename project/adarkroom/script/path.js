@@ -10,7 +10,7 @@ var Path = {
 		'bullets': 0.1,
 		'energy cell': 0.2,
 		'laser rifle': 5,
-    'plasma rifle': 5,
+    	'plasma rifle': 5,
 		'bolas': 0.5,
 	},
 		
@@ -174,7 +174,7 @@ var Path = {
 			'laser rifle': {type: 'weapon' },
 			'energy cell': {type: 'tool', desc: _('emits a soft red glow') },
 			'bayonet': {type: 'weapon' },
-			'charm': {type: 'tool'},
+			'charm': {type: 'tool',desc:_('maybe it works')},
 			'alien alloy': { type: 'tool' },
 			'medicine': {type: 'tool', desc: _('restores') + ' ' + World.MEDS_HEAL + ' ' + _('hp') }
 		}, Room.Craftables, Fabricator.Craftables);
